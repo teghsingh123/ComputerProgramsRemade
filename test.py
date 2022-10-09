@@ -17,15 +17,15 @@ def on_release(key):
     ))
 
     global shiftcount
-    if key == Key.shift:
+    if key == Key.shift_l or key == Key.shift_r:
         shiftcount += 1
 
     global ctrlcount
-    if key == Key.ctrl:
+    if key == Key.ctrl_l or key == Key.ctrl_r:
         ctrlcount += 1
 
     global altcount
-    if key == Key.alt:
+    if key == Key.alt_l or key == Key.alt_gr:
         altcount += 1
 
     if key == Key.esc:
